@@ -1,15 +1,24 @@
 import React from 'react';
-import {BrowserRouter as Router , Route} from 'react-router-dom';
+import Header from "./components/Header";
+import "./App.css";
+import About from "./components/About";
+import Shop from "./components/Shop";
+import Menu from "./components/Menu";
+import Clients from "./components/Clients";
+import Prices from "./components/Prices";
+import Footer from "./components/Footer";
 
-import Join from './components/Join/Join';
-import Chat from './components/Chat/Chat';
-
-const App = () =>
-    (
-        <Router>
-          <Route path="/" component={Join}/>
-          <Route path="/chat" component={Chat}/>
-        </Router>
-    );
+const App = () => {
+return(
+    <div>
+<Header/>
+<About/>
+<Shop/>
+<Menu/>
+<Clients/>
+<Prices/>
+<Footer/>
+</div>
+)};
 
 export default App;
